@@ -1,0 +1,19 @@
+curl -X POST -H "Content-Type: application/json" -d '{
+  "get_started": {
+    "payload": "GET_STARTED_PUGFORMACION"
+  }
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAALz76Mu6HEBANvZBXhj79v7fU37mcoFeP376YCEyeuhn9kp6MfIWSzz5ds4MK8i2ZC6EUT571w8DrBvlBekJx1hnYHa4agSdbADUuWE5yv9pTK93UvPZBQYZBn9CrZAZCgl3T8tbHLdDZBzPSoZBJ8MouXtcCiTnJ5HGDgNt6xglEp0eE7myiMv"
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "greeting": [
+    {
+      "locale": "default",
+      "text": "Hola {{user_first_name}}, soy bug formacion"
+    },
+    {
+      "locale": "en_US",
+      "text": "Hi {{user_first_name}}, I am Bug formacion"
+    }
+  ]
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAALz76Mu6HEBANvZBXhj79v7fU37mcoFeP376YCEyeuhn9kp6MfIWSzz5ds4MK8i2ZC6EUT571w8DrBvlBekJx1hnYHa4agSdbADUuWE5yv9pTK93UvPZBQYZBn9CrZAZCgl3T8tbHLdDZBzPSoZBJ8MouXtcCiTnJ5HGDgNt6xglEp0eE7myiMv"
